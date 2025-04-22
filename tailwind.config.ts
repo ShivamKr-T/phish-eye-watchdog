@@ -52,6 +52,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+                cyberpurple: {
+                    DEFAULT: '#9b87f5',
+                    dark: '#1A1F2C',
+                    light: '#F1F0FB'
+                },
+                cyberblue: {
+                    DEFAULT: '#0FA0CE',
+                    dark: '#1EAEDB'
+                },
+                cyberalert: {
+                    DEFAULT: '#ea384c'
+                },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
