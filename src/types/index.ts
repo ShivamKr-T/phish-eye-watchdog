@@ -12,6 +12,10 @@ export interface PredictionResponse {
   risk_level: 'high' | 'medium' | 'low' | 'safe';
 }
 
+export interface PResponse {
+  phishing:boolean
+}
+
 export interface DashboardMetric {
   id: string;
   label: string;

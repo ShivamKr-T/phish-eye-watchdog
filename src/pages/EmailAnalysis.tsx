@@ -44,14 +44,15 @@ const EmailAnalysis = () => {
       setTimeout(async () => {
         try {
           // Normally we'd call this, but we'll simulate a response for the demo
-          // const response = await analyzeEmail(data);
+          const respone = await analyzeEmail(data);
           
           // Simulate response based on some patterns in the email
           const isSuspicious = 
             data.sender.includes('unusual') || 
             data.subject.toLowerCase().includes('urgent') ||
             data.body.toLowerCase().includes('click here') ||
-            data.body.toLowerCase().includes('password');
+            data.body.toLowerCase().includes('password')||
+            data.body.toLowerCase().includes('lottery');
           
           const response: PredictionResponse = isSuspicious 
             ? {

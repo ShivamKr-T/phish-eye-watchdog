@@ -52,7 +52,7 @@ export function MainLayout({ children }: MainLayoutProps) {
       >
         <div className="p-4 flex items-center border-b border-sidebar-border h-16">
           <Shield className="h-6 w-6 text-sidebar-primary mr-2" />
-          <span className="font-bold text-xl">PhishEye</span>
+          <span className="font-bold text-xl text-black">PhishEye</span>
         </div>
         <nav className="flex-1 p-4">
           <ul className="space-y-2">
@@ -61,7 +61,7 @@ export function MainLayout({ children }: MainLayoutProps) {
                 <Link
                   to={item.href}
                   className={cn(
-                    "flex items-center p-2 rounded-md hover:bg-sidebar-accent group",
+                    "flex items-center p-2 rounded-md hover:bg-sidebar-accent group bg-violet-700",
                     location.pathname === item.href && "bg-sidebar-accent/80"
                   )}
                   onClick={() => setSidebarOpen(false)}
@@ -82,8 +82,8 @@ export function MainLayout({ children }: MainLayoutProps) {
               <Shield className="h-4 w-4 text-sidebar-primary" />
             </div>
             <div className="ml-3">
-              <p className="text-sm font-medium">Security Watchdog</p>
-              <p className="text-xs text-sidebar-foreground/70">Active Protection</p>
+              <p className="text-sm font-medium text-black">Security Watchdog</p>
+              <p className="text-xs text-sidebar-foreground/70 text-black">Active Protection</p>
             </div>
           </div>
         </div>
